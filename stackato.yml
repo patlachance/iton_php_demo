@@ -1,8 +1,8 @@
 name: iton_php_demo
 instances: 1
-framework:
-  type: php
-mem: 32
+
+framework: php
+mem: 32M
 services:
-  fs-iton_php_demo: filesystem
-  mysql-iton_php_demo: mysql
+  ${name}-fs: filesystem
+  ${name}-db: mysql
